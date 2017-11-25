@@ -1,4 +1,5 @@
 # README
+[![wercker status](https://app.wercker.com/status/4aa8144b368091202fd2b54d2ee2a356/s/master "wercker status")](https://app.wercker.com/project/byKey/4aa8144b368091202fd2b54d2ee2a356)
 
 This RESTful readonly API is will provide questions and answers in json format suppressing private questions.
 The HTTP response will be according with HTTP methods.
