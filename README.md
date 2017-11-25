@@ -17,3 +17,6 @@ Things you may want to cover to build the project:
 * $ rake db:create RAILS_ENV=test
 * $ rake db:migrate RAILS_ENV=test
 * $ script/build
+
+**Issue Tracker**
+https://trello.com/b/oQ6yf2T1/qaapi
