@@ -16,5 +16,6 @@ bundle > /dev/null
 
 # execute specs
 bundle exec rspec spec/controllers
+bundle exec rspec spec/requests
 bundle exec rspec spec/integrations
 bundle exec rspec spec/models

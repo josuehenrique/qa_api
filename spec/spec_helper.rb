@@ -13,6 +13,9 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+$:.unshift File.expand_path('../../', __FILE__)
+
 RSpec.configure do |config|
   config.color = true
 
