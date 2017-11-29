@@ -1,7 +1,6 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   validates :login, :token, presence: true
   validates :login, uniqueness: true
 
-  orderize
   filterize
 end
