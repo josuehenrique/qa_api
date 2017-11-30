@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171130001609) do
+ActiveRecord::Schema.define(version: 20171130224557) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20171130001609) do
     t.text "question", null: false
     t.integer "asker_id", null: false
     t.boolean "particular", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tenants", force: :cascade do |t|
+    t.string "api_token", null: false
+    t.string "name", limit: 100, null: false
+    t.string "login", limit: 80, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
