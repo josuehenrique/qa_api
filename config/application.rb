@@ -23,6 +23,7 @@ module QaApi
 
     config.autoload_paths += %W(
       #{config.root}/lib
+      #{config.root}/app/business
     )
 
     # Settings in config/environments/* take precedence over those specified here.

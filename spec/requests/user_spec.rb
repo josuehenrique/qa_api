@@ -26,10 +26,10 @@ describe 'Public access to users' do
   context '#index' do
     context 'when has users' do
       it 'should return status 200 and json the collection' do
-        user1 = FactoryBot.create(:user, login: 'josue')
-        user2 = FactoryBot.create(:user, login: 'isaiah')
-        user3 = FactoryBot.create(:user, login: 'mariah')
-        user4 = FactoryBot.create(:user, login: 'jeremiah')
+        user1 = FactoryBot.create(:user, login: 'josue', token: 'asdf234dg23vc')
+        user2 = FactoryBot.create(:user, login: 'isaiah', token: 'asdf234dgvcd')
+        user3 = FactoryBot.create(:user, login: 'mariah', token: 'asdf234dgvdwc')
+        user4 = FactoryBot.create(:user, login: 'jeremiah', token: 'asdf234dgvxc')
 
         get users_path
 
