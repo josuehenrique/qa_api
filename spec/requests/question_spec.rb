@@ -4,12 +4,12 @@ describe Question do
   context '#show' do
     context 'when has question' do
       it 'should return status 200 and json the resource' do
-       question = FactoryBot.create(:question)
+        question = FactoryBot.create(:answer).question
 
         get question_path(question.id)
 
         expect(response.code).to eq '200'
-        expect(response.body).to eq question.to_json
+        expect(response.body).to eq QuestionJsonFormatter.format(question).to_json
       end
     end
 
@@ -46,20 +46,16 @@ describe Question do
           :question,
           particular: true,
           asker: user,
-          question: 'Are you fine?'
-        )
-
-        question4 = FactoryBot.create(
-          :question,
-          particular: false,
-          asker: user,
           question: 'What the sky\'s color?'
         )
+
+        FactoryBot.create(:answer, question: question1, provider: user)
+        FactoryBot.create(:answer, question: question2, answer: 'My name is Joana', provider: user)
 
         get questions_path
 
         expect(response.code).to eq '200'
-        expect(response.body).to eq [question1, question2, question4].to_json
+        expect(response.body).to eq QuestionJsonFormatter.format([question1, question2]).to_json
       end
     end
 
