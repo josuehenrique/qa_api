@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  validates :login, :token, presence: true
-  validates :login, uniqueness: true
+  validates :login, :name, :token, presence: true
+  validates :login, :token, uniqueness: true
 
   filterize
 end
