@@ -46,3 +46,6 @@ Answer.create(question: question5, provider: user4, answer: 'Blue on de morning 
 Answer.create(question: question5, provider: user3, answer: 'Black in the night')
 Answer.create(question: question5, provider: user2, answer: 'The sky have many colors.')
 Answer.create(question: question5, provider: user1, answer: 'Grey in my country')
+
+Tenant.create(name: 'Grey', login: 'grey', api_token: 'asdf342dsadf')
+Tenant.create(name: 'Melly', login: 'melly', api_token: 'asdf342234dss$adf')
