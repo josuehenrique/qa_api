@@ -19,7 +19,7 @@ describe Tenant do
 
       tenant.save
 
-      expect(tenant.errors[:api_token]).to include 'has already been taken'
+      expect(tenant.errors[:api_key]).to include 'has already been taken'
     end
   end
 end
