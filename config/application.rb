@@ -26,6 +26,8 @@ module QaApi
       #{config.root}/app/business
     )
 
+    config.i18n.load_path += Dir["#{config.root}/config/locales/**/*.yml"]
+
     config.time_zone = 'Brasilia'
 
     # Settings in config/environments/* take precedence over those specified here.
