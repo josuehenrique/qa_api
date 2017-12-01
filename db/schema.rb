@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 20171230233632) do
     t.integer "tenant_id", null: false
     t.integer "amount", default: 0, null: false
     t.string "route", null: false
-    t.datetime "created_at", default: "2017-12-01 02:53:39", null: false
-    t.datetime "updated_at", default: "2017-12-01 02:53:39", null: false
+    t.datetime "created_at", default: "2017-12-01 02:53:35", null: false
+    t.datetime "updated_at", default: "2017-12-01 02:53:35", null: false
     t.index ["created_at", "route", "tenant_id"], name: "index_tenant_requests_on_created_at_and_route_and_tenant_id", unique: true
   end
 
