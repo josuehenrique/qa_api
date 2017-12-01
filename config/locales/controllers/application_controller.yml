@@ -1,0 +1,4 @@
+en:
+  controllers:
+    application_controller:
+      tenant_not_registered: 'Tenant not registered'
