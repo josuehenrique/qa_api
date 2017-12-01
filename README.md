@@ -24,3 +24,22 @@ https://trello.com/b/oQ6yf2T1/qaapi
 
 **Production URL**
 https://qaapi.herokuapp.com/
+
+**Available Routes**
+
+| URL            | Verb |
+|----------------|:----:|
+| /users         | GET  |
+| /users/:id     | GET  |
+| /questions     | GET  |
+| /questions/:id | GET  |
+| /dashboard     | GET  |
+
+**Available Tenants to make requests**
+* **name**: Grey, **login**: grey, **api_key**: asdf342dsadf
+* **name**: Melly, **login**: melly, **api_key**: asdf342234dss$adf
+
+**Instructions**
+* To make any request take some api key and put in header **api_key**.
+* The API_KEY will identify tentant requester.
+* Any request will be registered.
